@@ -11,7 +11,7 @@ class Sftpcommander < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_darwin_x86_64.tar.gz"
-      sha256 "ad2dbdf2454a2f0f77ef35eb892e46b38c7c6c2bdfed9c9fe3abc193864be55d"
+      sha256 "0dd5acdf03e13026e4a2dac7f7ae62fc43e5efb640a965034df9691b446bc5d3"
 
       define_method(:install) do
         bin.install "sftpcommander"
@@ -19,7 +19,7 @@ class Sftpcommander < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_darwin_arm64.tar.gz"
-      sha256 "9cd41e3761310951085e7fd5fe432667ba064ea8c292bccee43f3bdceca56b5d"
+      sha256 "55a81cf24e303b30828c91a57c8e5ff13c0bedad4da15c0330880185b0aada68"
 
       define_method(:install) do
         bin.install "sftpcommander"
@@ -30,14 +30,14 @@ class Sftpcommander < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_linux_x86_64.tar.gz"
-      sha256 "418a2f7fa415c61320524ed0ab9eae345cf8b32dd6fb52d3ea2fc7b0bbc083db"
+      sha256 "9e98e8ba9964fbfb54d04b5a691ca54f49df236552b720ae18f9037a4f1c93b1"
       define_method(:install) do
         bin.install "sftpcommander"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_linux_arm64.tar.gz"
-      sha256 "a2bf4a07e41f5c57e41751423106570e0262f432e75263ba241b4c6d0f240f32"
+      sha256 "65194d15112a8840e77526237c2d1159daad9aa683e07d9d955c3376efeaeb70"
       define_method(:install) do
         bin.install "sftpcommander"
       end
