@@ -5,21 +5,21 @@
 class Sftpcommander < Formula
   desc "Terminal SFTP client with a keyboard-driven TUI"
   homepage "https://github.com/art-ps/sftpcommander"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.2/sftpcommander_0.1.2_darwin_x86_64.tar.gz"
-      sha256 "e30707bdab0444322aedbe4a9e2a6db7ff0d3b8beae84e035165bf7fec002a2b"
+      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_darwin_x86_64.tar.gz"
+      sha256 "03947560db8ffaeb1f23918d81ecd548c5a90990c03d3375268c2549e6554ea3"
 
       define_method(:install) do
         bin.install "sftpcommander"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.2/sftpcommander_0.1.2_darwin_arm64.tar.gz"
-      sha256 "0716eab5d5d8d077278aadfd521280f95c76fc14d78a87f582f590f82558ffa0"
+      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_darwin_arm64.tar.gz"
+      sha256 "b34fbcadcd53cd60504beb4690ac54aa7273cad97b5b8de5d86fbc2d3b5e24cf"
 
       define_method(:install) do
         bin.install "sftpcommander"
@@ -29,15 +29,15 @@ class Sftpcommander < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.2/sftpcommander_0.1.2_linux_x86_64.tar.gz"
-      sha256 "f2aa4d64601624fecdb3388be5958efa7eed29a51c14b18e64d0221998b63d5f"
+      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_linux_x86_64.tar.gz"
+      sha256 "22dad73a983a313054731b8f7f812b0bb04ee14f35c0df046ce5f6040c0b596d"
       define_method(:install) do
         bin.install "sftpcommander"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.2/sftpcommander_0.1.2_linux_arm64.tar.gz"
-      sha256 "9239b0f95ff23259a06b59af6bff1e3036f8a28689dcbd5fa9b92baf1b27762d"
+      url "https://github.com/art-ps/sftpcommander/releases/download/v0.1.3/sftpcommander_0.1.3_linux_arm64.tar.gz"
+      sha256 "4573a9f58425f2d2c8bad0867a87eb8fd515c367d1eaf5790d375f90822d752f"
       define_method(:install) do
         bin.install "sftpcommander"
       end
