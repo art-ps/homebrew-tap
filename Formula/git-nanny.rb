@@ -4,7 +4,6 @@
 class GitNanny < Formula
   desc "Cleans up dead local git branches: merged, squash-merged and forgotten"
   homepage "https://github.com/art-ps/git-nanny"
-  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
