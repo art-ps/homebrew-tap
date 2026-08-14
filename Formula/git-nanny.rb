@@ -5,13 +5,13 @@
 class GitNanny < Formula
   desc "Cleans up dead local git branches: merged, squash-merged and forgotten"
   homepage "https://github.com/art-ps/git-nanny"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.0/git-nanny_0.3.0_darwin_x86_64.tar.gz"
-      sha256 "54bc97fa671727d197b6908298715ac518555341c59c56ce13038ea30f132d73"
+      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.1/git-nanny_0.3.1_darwin_x86_64.tar.gz"
+      sha256 "2e4a1a7ef985e2440517cd102515b492fc34e6fb26052c0333a89312bf5927ff"
 
       define_method(:install) do
         bin.install "git-nanny"
@@ -19,8 +19,8 @@ class GitNanny < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.0/git-nanny_0.3.0_darwin_arm64.tar.gz"
-      sha256 "3666ce9d7bc809d6303292ee8297de37673d369bb9d562922bef4acbf858b520"
+      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.1/git-nanny_0.3.1_darwin_arm64.tar.gz"
+      sha256 "c2306fbe0326029ee947d85f75e7eb7289814062699a3e276c7f2237f24d87c6"
 
       define_method(:install) do
         bin.install "git-nanny"
@@ -31,16 +31,16 @@ class GitNanny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.0/git-nanny_0.3.0_linux_x86_64.tar.gz"
-      sha256 "6b30017a25438e2c20255e7f0ba86aa0918d7c616cf72090a114c7f6fea5557f"
+      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.1/git-nanny_0.3.1_linux_x86_64.tar.gz"
+      sha256 "bdb51a7c64469c9093ca136ba74eaa92e528fcbb48163bc37db02acb77fdc77e"
       define_method(:install) do
         bin.install "git-nanny"
         man1.install "man/git-nanny.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.0/git-nanny_0.3.0_linux_arm64.tar.gz"
-      sha256 "d9ae67af79c7c0350f1712a4a9419d236b96b7906e10b972ebcda82c274184f6"
+      url "https://github.com/art-ps/git-nanny/releases/download/v0.3.1/git-nanny_0.3.1_linux_arm64.tar.gz"
+      sha256 "f3d92e9ae028611c53a1110fed02ee32e479680f086a9cbbcb36a23da53423b8"
       define_method(:install) do
         bin.install "git-nanny"
         man1.install "man/git-nanny.1"
