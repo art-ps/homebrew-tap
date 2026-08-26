@@ -2,11 +2,11 @@ cask "langflip" do
   version "0.3.5"
   sha256 "43baccf6e106e4d66a3d5596de9ae79fc177aa81654f8f98aad78a28a9df3f7c"
 
-  url "https://github.com/art-ps/langflip/releases/download/v#{version}/LangFlip-#{version}.dmg",
-      verified: "github.com/art-ps/langflip/"
+  url "https://github.com/art-ps/langflip-site/releases/download/v#{version}/LangFlip-#{version}.dmg",
+      verified: "github.com/art-ps/langflip-site/"
   name "LangFlip"
   desc "Menu bar app that fixes text typed in the wrong keyboard layout"
-  homepage "https://github.com/art-ps/langflip"
+  homepage "https://langflip.app/"
 
   depends_on macos: ">= :sonoma"
 
