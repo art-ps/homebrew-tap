@@ -8,7 +8,7 @@ cask "langflip" do
   desc "Menu bar app that fixes text typed in the wrong keyboard layout"
   homepage "https://langflip.app/"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "LangFlip.app"
 
