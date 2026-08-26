@@ -6,4 +6,5 @@ Homebrew tap for art-ps tools.
 brew install art-ps/tap/sftpcommander
 brew install art-ps/tap/git-nanny
 brew install art-ps/tap/volnorez
+brew install --cask art-ps/tap/langflip
 ```
