@@ -1,6 +1,6 @@
 cask "langflip" do
-  version "0.3.7"
-  sha256 "ba1c02eb3325ef35e8ff7015e3bccb7b1ed09658e127183ab60cbc3c007fb5af"
+  version "0.4.1"
+  sha256 "3b4a7a57dbe7212533c6c76ce52c0fc5f8ba214295012ec5834743c4f1feeef4"
 
   url "https://github.com/art-ps/langflip-site/releases/download/v#{version}/LangFlip-#{version}.dmg",
       verified: "github.com/art-ps/langflip-site/"
