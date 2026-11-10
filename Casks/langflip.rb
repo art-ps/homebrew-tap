@@ -20,10 +20,6 @@ cask "langflip" do
   ]
 
   caveats <<~EOS
-    LangFlip carries a development signature and is not notarized, so Gatekeeper
-    will refuse the first launch. Open it once from Finder with right-click -> Open
-    and confirm both dialogs; after that it starts normally.
-
     It needs the Input Monitoring and Accessibility permissions, which onboarding
     requests. The microphone is only used if you turn dictation on.
   EOS
